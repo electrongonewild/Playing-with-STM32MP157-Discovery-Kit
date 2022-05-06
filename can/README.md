@@ -23,9 +23,24 @@ Here are direct links for same.<br>
 ## Connections
 * Power Supply(5V/3.3V and GND)
 ## Implementation
-* <b>Changes to device tree to configure fdcan pins for CAN communication</b>
-The hardware for this port is m_can1 whose pins are PIN3-FD_CAN1TX(PA12), PIN5-FD_CAN1RX(PA11), more details can be seen in the below image: (Reference:- User Manual for STM32MP157C-DK2)
-All M_CAN nodes are described in stm32mp153.dtsi [2] file with disabled status, change the status “disabled” to “okay” as shown below:
+* <b>Changes to device tree to configure fdcan pins for CAN communication</b><br>
+   The hardware for this port is m_can1 whose pins are PIN3-FD_CAN1TX(PA12), PIN5-FD_CAN1RX(PA11)<br>
+   All M_CAN nodes are described in stm32mp153.dtsi file with disabled status, change the status “disabled” to “okay” as shown below:<br>
+   ```m_can1: can@4400e000 {
+     compatible = "bosch,m_can";                       
+     reg = <0x4400e000 0x400>, <0x44011000 0x1400>;   
+     reg-names = "m_can", "message_ram";
+     interrupts = <GIC_SPI 19 IRQ_TYPE_LEVEL_HIGH>,
+              <GIC_SPI 21 IRQ_TYPE_LEVEL_HIGH>;
+     interrupt-names = "int0", "int1";
+     clocks = <&rcc CK_HSE>, <&rcc FDCAN_K>;
+     clock-names = "hclk", "cclk";
+     bosch,mram-cfg = <0x0 0 0 32 0 0 2 2>;
+     status = "okay";
+ };```
+ 
+
+ 
 ## Contributions
 
 For reporting any ```technical issue``` or proposing ```new feature```, please create new [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
