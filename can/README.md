@@ -11,7 +11,6 @@ In this project, we are going to see the following using STM32MP157x-DK1/2:
 * [Documentation](/can/README.md#documentation)
 * [Prerequisites](/can/README.md#prerequisites)
 * [Connection Diagram](/can/README.md#connections)
-* [Getting Started](/can/README.md#getting-started)
 * [Implementation](/can/README.md#implementation)
 * [Contributions](/can/README.md#contributions)
 
@@ -23,10 +22,10 @@ Here are direct links for same.<br>
 * Basic knowledge of CAN communication(it's never too late you can checkout this [Link](https://embedclogic.com/can-protocol/))  
 ## Connections
 * Power Supply(5V/3.3V and GND)
-## Getting Started
-Follow the steps for getting started:
-* Now you can further proceed according to your application.
 ## Implementation
+- Make changes to device tree to configure fdcan pins for CAN communication
+The hardware for this port is m_can1 whose pins are PIN3-FD_CAN1TX(PA12), PIN5-FD_CAN1RX(PA11), more details can be seen in the below image: (Reference:- User Manual for STM32MP157C-DK2)
+All M_CAN nodes are described in stm32mp153.dtsi [2] file with disabled status, change the status “disabled” to “okay” as shown below:
 ## Contributions
 
 For reporting any ```technical issue``` or proposing ```new feature```, please create new [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
