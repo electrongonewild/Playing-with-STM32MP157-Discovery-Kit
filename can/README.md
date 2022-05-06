@@ -23,7 +23,7 @@ Here are direct links for same.<br>
 ## Connections
 * Power Supply(5V/3.3V and GND)
 ## Implementation
-- Make changes to device tree to configure fdcan pins for CAN communication
+* <b>Changes to device tree to configure fdcan pins for CAN communication</b>
 The hardware for this port is m_can1 whose pins are PIN3-FD_CAN1TX(PA12), PIN5-FD_CAN1RX(PA11), more details can be seen in the below image: (Reference:- User Manual for STM32MP157C-DK2)
 All M_CAN nodes are described in stm32mp153.dtsi [2] file with disabled status, change the status “disabled” to “okay” as shown below:
 ## Contributions
