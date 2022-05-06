@@ -39,7 +39,9 @@ Here are direct links for same.<br>
      bosch,mram-cfg = <0x0 0 0 32 0 0 2 2>;
      status = "okay";
    };
- * Build .dtbs, Push the devicetree into the board.
+ 
+ Build .dtbs, Push the devicetree into the board.
+ Make sure to connect an external CAN transceiver circuit for communicating over a CAN bus.
 
 ## Contributions
 
