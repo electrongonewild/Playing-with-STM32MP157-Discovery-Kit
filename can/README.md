@@ -38,7 +38,7 @@ Here are direct links for same.<br>
      clock-names = "hclk", "cclk";
      bosch,mram-cfg = <0x0 0 0 32 0 0 2 2>;
      status = "okay";
- };
+   };
  ```
  
 
