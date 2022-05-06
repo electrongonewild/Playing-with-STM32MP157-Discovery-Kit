@@ -1,7 +1,7 @@
 # UART Protocol
 In this project, we are going to see the following using STM32MP157x-DK1/2:
 * Make changes to device tree to configure fdcan pins for UART communication
-* Send and receive data via UART using ```python serial``` 
+* Send and receive data via UART using ```serial``` library in python 
 
 ## Table of Contents
 * [Documentation](/uart/README.md#documentation)
