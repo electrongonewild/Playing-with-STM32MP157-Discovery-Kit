@@ -4,12 +4,12 @@ In this project, we are going to see the following using STM32MP157x-DK1/2:
 * Send and receive data via UART using ```python serial``` 
 
 ## Table of Contents
-* [Documentation](/can/README.md#documentation)
-* [Prerequisites](/can/README.md#prerequisites)
-* [Connection Diagram](/can/README.md#connections)
-* [Getting Started](/can/README.md#getting-started)
-* [Implementation](/can/README.md#implementation)
-* [Contributions](/can/README.md#contributions)
+* [Documentation](/uart/README.md#documentation)
+* [Prerequisites](/uart/README.md#prerequisites)
+* [Connection Diagram](/uart/README.md#connections)
+* [Getting Started](/uart/README.md#getting-started)
+* [Implementation](/uart/README.md#implementation)
+* [Contributions](/uart/README.md#contributions)
 
 ## Documentation
 It is highly recommended to go through the Documentation first.<br>
