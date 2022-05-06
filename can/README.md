@@ -25,7 +25,7 @@ Here are direct links for same.<br>
 ## Implementation
 * <b>Changes to device tree to configure fdcan pins for CAN communication</b><br>
    The hardware for this port is m_can1 whose pins are PIN3-FD_CAN1TX(PA12), PIN5-FD_CAN1RX(PA11)<br>
-   All M_CAN nodes are described in stm32mp153.dtsi file with disabled status, change the status “disabled” to “okay” as shown below:<br>
+   All M_CAN nodes are described in stm32mp153.dtsi file with disabled status, change the status “disabled” to “okay” as shown below:<br><br>
    ```
    m_can1: can@4400e000 {
      compatible = "bosch,m_can";                       
