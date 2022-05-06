@@ -39,10 +39,8 @@ Here are direct links for same.<br>
      bosch,mram-cfg = <0x0 0 0 32 0 0 2 2>;
      status = "okay";
    };
- ```
- 
+ * Build .dtbs, Push the devicetree into the board.
 
- 
 ## Contributions
 
 For reporting any ```technical issue``` or proposing ```new feature```, please create new [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
