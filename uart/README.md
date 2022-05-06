@@ -1,4 +1,5 @@
 # UART Protocol
+UART stands for Universal Asynchronous Receiver/Transmitter. It is a dedicated hardware associated with serial communication. UART is used in many applications like GPS Receivers, Bluetooth Modules, GSM and GPRS Modems, Wireless Communication Systems, RFID based applications etc.<br>
 In this project, we are going to see the following using STM32MP157x-DK1/2:
 * Make changes to device tree to configure fdcan pins for UART communication
 * Send and receive data via UART using ```serial``` library in python 
