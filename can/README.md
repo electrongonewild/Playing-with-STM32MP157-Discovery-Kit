@@ -1,9 +1,10 @@
 # CAN Communication
-
+CAN  stands for Controller Area network. It is an Asynchronous serial communication protocol introduced in 1986 by Robert Bosch.
+CAN protocol is a message based protocol not address based means transmitted data is available for all nodes and its receiver’s choice to receive data or not.
 In this project, we are going to see the following using STM32MP157x-DK1/2:
 * Make changes to device tree to configure fdcan pins for CAN communication
 * Flash autorun CAN config files on startup
-* Use ```socketcan```  module to send and receive CAN frames using can-utils
+* Use ```SocketCAN```  module to send and receive CAN frames using can-utils
 * Send and receive CAN frames using python-can
 
 ## Table of Contents
