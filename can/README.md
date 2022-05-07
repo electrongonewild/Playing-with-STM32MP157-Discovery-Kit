@@ -43,12 +43,17 @@ Here are direct links for same.<br>
  Build .dtbs, Push the devicetree into the board.<br>
  Make sure to connect an external CAN transceiver circuit for communicating over a CAN bus.<br><br>
 ![Alt text](https://github.com/electrongonewild/Playing-with-STM32MP157-Discovery-Kit/blob/main/Images/CANOverview.PNG?raw=true "Title")
-* <b>Flash autorun CAN config files on startup</b><br>
+* <b>Flash autorun CAN config files on startup</b><br><br>
    Execute following commands:<br>
-   -```root@stm32mp1:~# cd /etc/profile.d/```<br>
-   -```root@stm32mp1:/etc/profile.d# nano weston.sh```<br>
-   Paste the following lines along with already present code at last:<br>
-
+   -```Board $> cd /etc/profile.d/```<br>
+   -```Board $> nano weston.sh```<br><br>
+   Paste the following lines along with already present code at last to enable CAN with bit rate 500kpbs:<br>
+   ```
+      ip link set can0 down
+      ip link set can0 up type can bitrate 500000
+      ip link set can0 up
+   ```
+   Press CTRL+S and CTRL+X to save and exit the text editor.<br>
    
 
 ## Contributions
