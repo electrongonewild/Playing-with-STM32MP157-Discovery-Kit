@@ -2,7 +2,7 @@
 CAN  stands for Controller Area network. It is an Asynchronous serial communication protocol introduced in 1986 by Robert Bosch.
 CAN protocol is a message based protocol not address based means transmitted data is available for all nodes and its receiver’s choice to receive data or not.<br>
 In this project, we are going to see the following using STM32MP157x-DK1/2:
-* Make changes to device tree to configure fdcan pins for CAN communication
+* Make changes in device tree to configure fdcan pins for CAN communication
 * Flash autorun CAN config files on startup
 * Use ```SocketCAN```  module to send and receive CAN frames using can-utils
 * Send and receive CAN frames using ```python-can``` 
@@ -23,7 +23,7 @@ Here are direct links for same.<br>
 ## Connections
 * Power Supply(5V/3.3V and GND)
 ## Implementation
-* <b>Changes to device tree to configure fdcan pins for CAN communication</b><br>
+* <b>Changes in device tree to configure fdcan pins for CAN communication</b><br>
    The hardware for this port is m_can1 whose pins are PIN3-FD_CAN1TX(PA12), PIN5-FD_CAN1RX(PA11)<br>
    All M_CAN nodes are described in stm32mp153.dtsi file with disabled status, change the status “disabled” to “okay” as shown below:<br><br>
    ```
@@ -41,9 +41,16 @@ Here are direct links for same.<br>
    };
  
  Build .dtbs, Push the devicetree into the board.<br>
- Make sure to connect an external CAN transceiver circuit for communicating over a CAN bus.<br>
+ Make sure to connect an external CAN transceiver circuit for communicating over a CAN bus.<br><br>
 ![Alt text](https://github.com/electrongonewild/Playing-with-STM32MP157-Discovery-Kit/blob/main/Images/CANOverview.PNG?raw=true "Title")
-* <b>Changes to device tree to configure fdcan pins for CAN communication</b><br>
+* <b>Flash autorun CAN config files on startup</b><br>
+   Execute following commands:<br>
+   -```root@stm32mp1:~# cd /etc/profile.d/```<br>
+   -```root@stm32mp1:/etc/profile.d# nano weston.sh```<br>
+   Paste the following lines along with already present code at last:<br>
+
+   
+
 ## Contributions
 
 For reporting any ```technical issue``` or proposing ```new feature```, please create new [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
