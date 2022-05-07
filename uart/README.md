@@ -19,7 +19,7 @@ Here are direct links for same.<br>
 * [Databrief](https://www.st.com/resource/en/data_brief/stm32mp157d-dk1.pdf)
 * [Documentation](https://www.st.com/en/evaluation-tools/stm32mp157d-dk1.html#documentation)
 ## Prerequisites
-* Basic knowledge of UART communication(it's never too late you can checkout this [Link])  
+* Basic knowledge of UART communication
 ## Connections
 * Power Supply(5V/3.3V and GND)
 ## Getting Started
