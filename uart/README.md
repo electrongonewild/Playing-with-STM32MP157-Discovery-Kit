@@ -15,7 +15,7 @@ In this project, we are going to see the following using STM32MP157x-DK1/2:
 ## Documentation
 It is highly recommended to go through the Documentation first.<br>
 Here are direct links for same.<br>
-* [Datasheet](https://www.quectel.com/ProductDownload/EC200T.zip) 
+* Datasheet
 ## Prerequisites
 * Basic knowledge of UART communication(it's never too late you can checkout this [Link])  
 ## Connections
