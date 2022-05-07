@@ -15,7 +15,9 @@ In this project, we are going to see the following using STM32MP157x-DK1/2:
 ## Documentation
 It is highly recommended to go through the Documentation first.<br>
 Here are direct links for same.<br>
-* Datasheet
+* [st-wiki](https://wiki.stmicroelectronics.cn/stm32mpu/wiki/Getting_started)
+* [Databrief](https://www.st.com/resource/en/data_brief/stm32mp157d-dk1.pdf)
+* [Documentation](https://www.st.com/en/evaluation-tools/stm32mp157d-dk1.html#documentation)
 ## Prerequisites
 * Basic knowledge of UART communication(it's never too late you can checkout this [Link])  
 ## Connections
