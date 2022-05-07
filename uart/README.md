@@ -27,6 +27,15 @@ Follow the steps for getting started:
 * Now you can further proceed according to your application.
 ## Implementation
 * Changes in device tree to configure uart pins for UART communication
+```
+&usart3 {
+    pinctrl-names = "default", "sleep";
+    pinctrl-0 = <&usart3_pins_b>;
+    pinctrl-1 = <&usart3_sleep_pins_b>;
+    status = "okay";
+};
+```
+* These configurations are for pins ```PB10(USART3_TX)``` and ```PB12(USART3_RX)``` on GPIO connector
 ## Contributions
 
 For reporting any ```technical issue``` or proposing ```new feature```, please create new [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
