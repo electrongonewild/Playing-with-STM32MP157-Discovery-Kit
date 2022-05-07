@@ -42,7 +42,7 @@ Here are direct links for same.<br>
  
  Build .dtbs, Push the devicetree into the board.<br>
  Make sure to connect an external CAN transceiver circuit for communicating over a CAN bus.
-![Alt text](Images/CANOverview.PNG?raw=true "Title")<br>
+![Alt text](main/Images/CANOverview.PNG?raw=true "Title")<br>
 ## Contributions
 
 For reporting any ```technical issue``` or proposing ```new feature```, please create new [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
