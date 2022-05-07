@@ -26,6 +26,7 @@ Here are direct links for same.<br>
 Follow the steps for getting started:
 * Now you can further proceed according to your application.
 ## Implementation
+* Changes in device tree to configure uart pins for UART communication
 ## Contributions
 
 For reporting any ```technical issue``` or proposing ```new feature```, please create new [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
