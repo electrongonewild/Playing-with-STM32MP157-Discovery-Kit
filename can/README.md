@@ -41,8 +41,9 @@ Here are direct links for same.<br>
    };
  
  Build .dtbs, Push the devicetree into the board.<br>
- Make sure to connect an external CAN transceiver circuit for communicating over a CAN bus.
-![Alt text](https://github.com/electrongonewild/Playing-with-STM32MP157-Discovery-Kit/blob/main/Images/CANOverview.PNG?raw=true "Title")<br>
+ Make sure to connect an external CAN transceiver circuit for communicating over a CAN bus.<br>
+![Alt text](https://github.com/electrongonewild/Playing-with-STM32MP157-Discovery-Kit/blob/main/Images/CANOverview.PNG?raw=true "Title")
+* <b>Changes to device tree to configure fdcan pins for CAN communication</b><br>
 ## Contributions
 
 For reporting any ```technical issue``` or proposing ```new feature```, please create new [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
