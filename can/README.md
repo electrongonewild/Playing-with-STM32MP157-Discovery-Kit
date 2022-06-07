@@ -218,7 +218,7 @@ Here are direct links for same.<br>
       candump vcan2,123:7FF (matches CAN ID 123 - including EFF and RTR frames)
       candump vcan2,123:C00007FF (matches CAN ID 123 - only SFF and non-RTR frames)
      ```
-  * <b>Send and receive CAN frames using ```python-can```</b><br><br>
+* <b>Send and receive CAN frames using ```python-can```</b><br><br>
    Brief example of the library in action: connecting to a CAN bus, creating and sending a message:<br>
    ```
     #!/usr/bin/env python
