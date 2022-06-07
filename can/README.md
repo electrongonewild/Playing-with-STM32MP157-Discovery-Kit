@@ -90,8 +90,60 @@ Here are direct links for same.<br>
                 Interrupt:54 Base address:0x6000
    ```
    
-   
+   Configure the available SocketCAN interface using the ip link command line as follow:<br>
+   ```Board $>  ip link set can0 type can bitrate 1000000 dbitrate 2000000 fd on```<br>
+   ```
+      [ 78.700698] m_can 4400e000.can can0: bitrate error 0.3%
+      [ 78.704568] m_can 4400e000.can can0: bitrate error 1.6%
+   ```
+   To list CAN user-configurable options, use the following command line: <br>
+   ```Board $>  ip link set can0 type can help```<br>
+   ```
+      Usage: ip link set DEVICE type can
+        [ bitrate BITRATE [ sample-point SAMPLE-POINT] ] |
+        [ tq TQ prop-seg PROP_SEG phase-seg1 PHASE-SEG1
+          phase-seg2 PHASE-SEG2 [ sjw SJW ] ]
 
+        [ dbitrate BITRATE [ dsample-point SAMPLE-POINT] ] |
+        [ dtq TQ dprop-seg PROP_SEG dphase-seg1 PHASE-SEG1
+          dphase-seg2 PHASE-SEG2 [ dsjw SJW ] ]
+
+        [ loopback { on | off } ]
+        [ listen-only { on | off } ]
+        [ triple-sampling { on | off } ]
+        [ one-shot { on | off } ]
+        [ berr-reporting { on | off } ]
+        [ fd { on | off } ]
+        [ fd-non-iso { on | off } ]
+        [ presume-ack { on | off } ]
+
+        [ restart-ms TIME-MS ]
+        [ restart ]
+
+        Where: BITRATE  := { 1..1000000 }
+                  SAMPLE-POINT  := { 0.000..0.999 }
+                  TQ            := { NUMBER }
+                  PROP-SEG      := { 1..8 }
+                  PHASE-SEG1    := { 1..8 }
+                  PHASE-SEG2    := { 1..8 }
+                  SJW           := { 1..4 }
+                  RESTART-MS    := { 0 | NUMBER }
+   ```
+   To get a detailed status of the SocketCAN link, use the following command line: <br>
+    ```Board $> ip -details link show can0```<br>
+    ```
+      2: can0: <NOARP,ECHO> mtu 72 qdisc pfifo_fast state DOWN mode DEFAULT group default qlen 10
+          link/can  promiscuity 0
+          can <FD> state STOPPED (berr-counter tx 0 rx 0) restart-ms 0
+                bitrate 996078 sample-point 0.745
+                tq 19 prop-seg 18 phase-seg1 19 phase-seg2 13 sjw 1
+                m_can: tseg1 2..256 tseg2 1..128 sjw 1..128 brp 1..512 brp-inc 1
+                dbitrate 2032000 dsample-point 0.720
+                dtq 19 dprop-seg 8 dphase-seg1 9 dphase-seg2 7 dsjw 1
+                m_can: dtseg1 1..32 dtseg2 1..16 dsjw 1..16 dbrp 1..32 dbrp-inc 1
+                clock 50800000numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
+   ```
+   
 ## Contributions
 
 For reporting any ```technical issue``` or proposing ```new feature```, please create new [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
