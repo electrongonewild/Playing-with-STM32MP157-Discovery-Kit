@@ -43,7 +43,7 @@ Here are direct links for same.<br>
  Build .dtbs, Push the devicetree into the board.<br>
  Make sure to connect an external CAN transceiver circuit for communicating over a CAN bus.<br><br>
 ![Alt text](https://github.com/electrongonewild/Playing-with-STM32MP157-Discovery-Kit/blob/main/Images/CANOverview.PNG?raw=true "Title")<br>
-(Image referred from STWiki website [Link](https://wiki.st.com/stm32mpu/wiki/CAN_overview)
+(Image referred from [STWiki official website](https://wiki.st.com/stm32mpu/wiki/CAN_overview)
 * <b>Flash autorun CAN config files on startup</b><br><br>
    Execute following commands:<br>
    -```Board $> cd /etc/profile.d/```<br>
