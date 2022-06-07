@@ -143,6 +143,27 @@ Here are direct links for same.<br>
                 m_can: dtseg1 1..32 dtseg2 1..16 dsjw 1..16 dbrp 1..32 dbrp-inc 1
                 clock 50800000numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535
    ```
+   Then enable the connection by bringing the SocketCAN interface up: <br>
+    ```Board $> ip link set can0 up```<br>
+   You can check that the interface is up by printing the netlink status:<br>
+    ```Board $> ip -details link show can0```<br>
+    ```
+      2: can0: <NOARP,UP,LOWER_UP,ECHO> mtu 72 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 10
+          link/can  promiscuity 0
+          can <FD> state ERROR-ACTIVE (berr-counter tx 0 rx 0) restart-ms 0
+                bitrate 996078 sample-point 0.745
+      ...
+   ```
+   One can disable the connection by bringing the SocketCAN interface down. This command is useful when you need to reconfigure the SocketCAN interface: <br>
+    ```Board $>  ip link set can0 down```<br>
+    
+    To send a single frame, use the cansend utility: <br>
+     ```Board $> cansend can0 123#1122334455667788```<br>
+    To print help on cansend utility: <br>
+    ```
+    Board $>  cansend -h
+   Usage: cansend <device> <can_frame>
+   ```
    
 ## Contributions
 
