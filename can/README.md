@@ -4,6 +4,7 @@ CAN protocol is a message based protocol not address based means transmitted dat
 In this project, we are going to see the following using STM32MP157x-DK1/2:
 * Make changes in device tree to configure fdcan pins for CAN communication
 * Flash autorun CAN config files on startup
+* How to trace
 * Use ```SocketCAN```  module to send and receive CAN frames using can-utils
 * Send and receive CAN frames using ```python-can``` 
 
@@ -63,6 +64,7 @@ Here are direct links for same.<br>
       [   25.560759] m_can 4400e000.can can0: bitrate error 0.3%
       [   25.564630] m_can 4400e000.can can0: bitrate error 1.6%
    ```
+*<b>Use ```SocketCAN```  module to send and receive CAN frames using can-utils<br>
    
 
 ## Contributions
