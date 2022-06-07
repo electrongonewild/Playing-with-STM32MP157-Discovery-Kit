@@ -19,6 +19,7 @@ In this project, we are going to see the following using STM32MP157x-DK1/2:
 It is highly recommended to go through the Documentation first.<br>
 Here are direct links for same.<br>
 * [Datasheet](https://www.quectel.com/ProductDownload/EC200T.zip) 
+* [python-can lib](https://python-can.readthedocs.io/en/master/)
 ## Prerequisites
 * Basic knowledge of CAN communication(it's never too late you can checkout this [Link](https://embedclogic.com/can-protocol/))  
 ## Connections
