@@ -56,9 +56,10 @@ Here are direct links for same.<br>
    ```
    Press CTRL+S and CTRL+X to save and exit the text editor.<br>
 * <b>How to trace</b><br><br>
-   CAN Framework, specifically M_CAN driver, print out info and error messages. You can display them with dmesg command: 
+   CAN Framework, specifically M_CAN driver, print out info and error messages. You can display them with dmesg command:<br>
    -```Board $>  dmesg | grep m_can```<br>
-   ```[    1.327824] m_can 4400e000.can: m_can device registered (irq=30, version=32)
+   ```
+      [    1.327824] m_can 4400e000.can: m_can device registered (irq=30, version=32)
       [   25.560759] m_can 4400e000.can can0: bitrate error 0.3%
       [   25.564630] m_can 4400e000.can can0: bitrate error 1.6%
    ```
