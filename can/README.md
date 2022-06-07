@@ -64,7 +64,32 @@ Here are direct links for same.<br>
       [   25.560759] m_can 4400e000.can can0: bitrate error 0.3%
       [   25.564630] m_can 4400e000.can can0: bitrate error 1.6%
    ```
-* <b>Use ```SocketCAN```  module to send and receive CAN frames using can-utils</b><br><br>
+* <b>Use ```SocketCAN```  module to send and receive CAN frames using can-utils</b><br><br>  
+   The available CAN devices are listed in /sys/class/net/:<br> 
+   -```Board $>  ls /sys/class/net```<br>
+   ```
+      can0  eth0                 /* can0 interface is available but not necessarily active */
+   ```
+   One can also display all the available network interfaces to find out the available CAN devices:<br>
+   -```Board $>  ifconfig -a```<br>
+   ```
+      can0      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+                NOARP  MTU:16  Metric:1
+                RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:10
+                RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+                Interrupt:30
+
+      eth0      Link encap:Ethernet  HWaddr 00:80:E1:42:45:EC
+                UP BROADCAST MULTICAST  MTU:1500  Metric:1
+                RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+                TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+                collisions:0 txqueuelen:1000
+                RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+                Interrupt:54 Base address:0x6000
+   ```
+   
    
 
 ## Contributions
