@@ -1,7 +1,7 @@
 # UART Protocol
 UART stands for Universal Asynchronous Receiver/Transmitter. It is a dedicated hardware associated with serial communication. UART is used in many applications like GPS Receivers, Bluetooth Modules, GSM and GPRS Modems, Wireless Communication Systems, RFID based applications etc.<br>
 In this project, we are going to see the following using STM32MP157x-DK1/2:
-* Make changes to device tree to configure fdcan pins for UART communication
+* Make changes to device tree to configure pins for UART communication
 * Send and receive data via UART using ```serial``` library in python 
 
 ## Table of Contents
@@ -26,7 +26,9 @@ Here are direct links for same.<br>
 Follow the steps for getting started:
 * Now you can further proceed according to your application.
 ## Implementation
-* Changes in device tree to configure uart pins for UART communication
+* Changes in device tree to configure uart pins for UART communication.<br>
+Working directory: STM32MPU_workspace/STM32MP15-Ecosystem-v2.0.0/Developer-Package/stm32mp1-openstlinux-5.10-dunfell-mp1-21-11-17/sources/arm-ostl-linux-gnueabi/linux-stm32mp-5.10.61-stm32mp-r2-r0/linux-5.10.61/arch/arm/boot/dts . <br>
+Open stm32mp157a-dk1.dts and add the following lines
 ```
 &usart3 {
     pinctrl-names = "default", "sleep";
@@ -35,6 +37,7 @@ Follow the steps for getting started:
     status = "okay";
 };
 ```
+* Open file stm32mp15xx-dkx
 * These configurations are for pins ```PB10(USART3_TX)``` and ```PB12(USART3_RX)``` on GPIO connector
 ## Contributions
 
