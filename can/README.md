@@ -220,7 +220,7 @@ Here are direct links for same.<br>
      ```
 * <b>Send and receive CAN frames using ```python-can```</b><br><br>
    Brief example of the library in action: connecting to a CAN bus, creating and sending a message:<br>
-   ```testCAN.py
+   ```receiveCANFrame.py and sendCANFrame.py
 
    ```
 ## Contributions
