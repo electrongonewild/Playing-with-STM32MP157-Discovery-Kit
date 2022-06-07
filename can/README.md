@@ -64,7 +64,7 @@ Here are direct links for same.<br>
       [   25.560759] m_can 4400e000.can can0: bitrate error 0.3%
       [   25.564630] m_can 4400e000.can can0: bitrate error 1.6%
    ```
-*<b>Use ```SocketCAN```  module to send and receive CAN frames using can-utils<br>
+* <b>Use ```SocketCAN```  module to send and receive CAN frames using can-utils</b><br><br>
    
 
 ## Contributions
