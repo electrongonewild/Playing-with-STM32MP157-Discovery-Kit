@@ -43,7 +43,14 @@ Follow the steps for getting started:
 		serial0 = &uart4;
 		serial1 = &usart3;
 	};
- ``` 
+``` 
+* Make the changes and build the device tree and push the equivalent .dtb file to STM discovery kit.
+* Check whether uart3 is configured as serial1 using the following command on STM terminal. Press tab to see the output
+```
+root@stm32mp1:~# ls /dev/ttySTM
+Output: ttySTM0  ttySTM1  ttySTM2
+```
+
 * These configurations are for pins ```PB10(USART3_TX)``` and ```PB12(USART3_RX)``` on GPIO connector
 ## Contributions
 
