@@ -1,6 +1,6 @@
 
 # I2C Communication
-I2C  stands for Inter-Integrated Circuit. It is an Asynchronous serial communication protocol introduced in 1986 by Robert Bosch.
+I2C  stands for Inter-Integrated Circuit. It is a serial communication protocol, originally designed by Philips Semiconductor in 1982.
 CAN protocol is a message based protocol not address based means transmitted data is available for all nodes and its receiver’s choice to receive data or not.<br>
 In this project, we are going to see the following using STM32MP157x-DK1/2:
 * Make changes in device tree to configure fdcan pins for CAN communication
