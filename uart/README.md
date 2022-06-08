@@ -26,9 +26,8 @@ Here are direct links for same.<br>
 Follow the steps for getting started:
 * Now you can further proceed according to your application.
 ## Implementation
-* Changes in device tree to configure uart pins for UART communication.<br>
-Working directory: STM32MPU_workspace/STM32MP15-Ecosystem-v2.0.0/Developer-Package/stm32mp1-openstlinux-5.10-dunfell-mp1-21-11-17/sources/arm-ostl-linux-gnueabi/linux-stm32mp-5.10.61-stm32mp-r2-r0/linux-5.10.61/arch/arm/boot/dts . <br>
-Open stm32mp157a-dk1.dts and add the following lines
+* **Working directory:** STM32MPU_workspace/STM32MP15-Ecosystem-v2.0.0/Developer-Package/stm32mp1-openstlinux-5.10-dunfell-mp1-21-11-17/sources/arm-ostl-linux-gnueabi/linux-stm32mp-5.10.61-stm32mp-r2-r0/linux-5.10.61/arch/arm/boot/dts . <br>
+* Changes in device tree to configure uart pins for UART communication. Open stm32mp157a-dk1.dts and add the following lines
 ```
 &usart3 {
     pinctrl-names = "default", "sleep";
@@ -37,7 +36,14 @@ Open stm32mp157a-dk1.dts and add the following lines
     status = "okay";
 };
 ```
-* Open file stm32mp15xx-dkx
+* Open file stm32mp15xx-dkx, make the following changes i.e. add uart3 as serial1.
+```
+	aliases {
+		ethernet0 = &ethernet0;
+		serial0 = &uart4;
+		serial1 = &usart3;
+	};
+ ``` 
 * These configurations are for pins ```PB10(USART3_TX)``` and ```PB12(USART3_RX)``` on GPIO connector
 ## Contributions
 
